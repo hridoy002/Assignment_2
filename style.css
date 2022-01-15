@@ -4,38 +4,54 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 
-main{
-    /* width:80%;
+/* main{
+    width:90%;
     display: flex;
     flex-direction: column;
-    align-items: center;*/
-} 
+    align-items: center;
+}  */
 nav{
     display: flex;
     justify-content: space-between;
-    margin:0 50px;
+    align-items: center;
+    margin:15px 50px;
+    
 }
 .menu{
     display: flex;
     text-decoration: none;
+    align-items: center;
+    
 }
 .menu a{
+    font-size: 16px;
     text-decoration: none;
     color: black;
     margin-right: 10px;
+    padding:0 10px;
+}
+.fas{
+    font-size: 16px;
+    padding-right: 10px;
+}
+.menu a:hover{
+    color: #E02C6D;
 }
 
 /*-----------top part gear-info --------------- */
 
 .gear-info{
+    margin-top: 40px;
     display:flex;
     justify-content: space-between;
 }
 .gear-heading{
     width: 50%;
+    padding-left: 50px;
 }
 .gear-heading h1{
     font-size: 30px;
@@ -56,13 +72,103 @@ nav{
     font-size: 14px;
     margin-left: 5px;
 }
+.gear-img{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.gear-img:hover{
+    transform: scale(1.2);
+    transition: transform 2s ease;
+}
 
 /*----------------- company logo ----------------- */
 
 .company-logo{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .company-logo img{
     margin:50px 15px;
+}
+
+/*------------ popular collection -------------------*/
+.popular-collections{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    justify-items: center;
+
+}
+.collection-heading{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.collection-card{
+    width: 330px;
+    height: 476px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.collection-details{
+    padding: 8px 16px;
+}
+
+.see-more{
+    text-align: right;
+    margin-right: 82px;
+    margin-bottom: 50px;
+}
+.see-more a{
+    color:#E02C6D;
+    text-decoration: none;
+}
+/*------------------- footer-----------------  */
+
+footer{
+  
+    background-color: #0A0826;
+    height:240px;
+    color:white;
+    
+}
+.foot-content{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-content h2{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.foot-content h3{
+    font-style: 10px;
+    font-weight: 300;
+    margin-top: 1px;
+}
+.foot-content h4{
+    display: inline;
+    font-style: 8px;
+    font-weight: normal;
+    margin:0;
+}
+.social-icon{
+    font-size:30px;
+    padding-bottom: 10px;
 }

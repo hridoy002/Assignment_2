@@ -314,7 +314,7 @@ footer{
 
  /*------------------- footer ------------------ */
     footer{
-  
+        width: 100%;
         background-color: #0A0826;
         height:211px;
         color:white;
@@ -394,6 +394,10 @@ nav{
     flex-direction: column;
 }
 .advertise-info {
+    width: 100%;
+}
+/* -----footer------------- */
+footer{
     width: 100%;
 }
   }

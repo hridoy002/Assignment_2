@@ -7,7 +7,7 @@ body{
     margin: 0;
 }
 
-
+/*------------------ header nav ------------------ */
 /* main{
     width:90%;
     display: flex;
@@ -328,7 +328,73 @@ footer{
 
   @media only screen and (min-width: 768px) and (max-width:1024px){
     body {
+      width: 100%;
       background-color: lightblue;
     }
+/*-------------- header nav ------------------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:15px 30px;
+    
+}
+
+.menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-right: 0px;
+    padding: 0 10px;
+}
+
+/*------------ gear info -------------- */
+.gear-info {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gear-img {
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.gear-img img{
+    width: 290px;
+    height: 270px;
+}
+
+/* ----------company logo ------------------ */
+.company-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* ------------popular collection ------------- */
+.popular-collections {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    justify-items: center;
+}
+/* --------------advertise container --------- */
+.advertise-container {
+    margin: 100px 54px;
+    display: flex;
+    flex-direction: column;
+}
+.advertise-info {
+    width: 100%;
+}
   }
   

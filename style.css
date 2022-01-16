@@ -207,6 +207,7 @@ footer{
         width: 100%;
         display: flex;
         text-align: center;
+        padding-left: 25px;
     }
     .menu {
         display: none;
@@ -219,10 +220,14 @@ footer{
         flex-direction: column;
     }
     .gear-heading {
-       padding: 44px;
+        width: 100%;
+       padding: 44px 0;
+       padding-left: 60px;
     }
     .gear-heading p{
-        text-align: ;
+        text-align:justify;
+        padding-right: 60px;
+        font-weight: 500;
     }
     .gear-heading button {
         color: white;
@@ -246,7 +251,7 @@ footer{
         width: 202px;
         height: 190px;
     }
-    
+    /*---------- company logo ------ */
     .company-logo {
         display: flex;
         justify-content: center;
@@ -316,3 +321,14 @@ footer{
         
     }
   }
+
+
+
+  /*-------------- tablet responive --------------- */
+
+  @media only screen and (min-width: 768px) and (max-width:1024px){
+    body {
+      background-color: lightblue;
+    }
+  }
+  
